@@ -8,7 +8,7 @@ namespace _1mvc.Models
 {
     public class DataContext:DbContext
     {
-        public DataContext():base("DefaultConnection")
+        public DataContext():base("DefaultConnection3")
         {
 
         }
@@ -16,5 +16,7 @@ namespace _1mvc.Models
         public System.Data.Entity.DbSet<_1mvc.Models.Product> Products { get; set; }
 
         public System.Data.Entity.DbSet<_1mvc.Models.Client> Clients { get; set; }
+
+        public System.Data.Entity.DbSet<_1mvc.Models.Sale> Sales { get; set; }
     }
 }
